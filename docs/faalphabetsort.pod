@@ -1,0 +1,70 @@
+=pod
+
+=head1 NAME
+
+=over 4
+
+=item B<faalphabetsort> - extract entries names from fasta formatted
+files, based on alphabet criteria.
+
+=back
+
+=head1 SYNOPSIS
+
+=over 4
+
+=item B<faalphabetsort> [options] E<lt>F<file>E<gt> ...
+
+=back
+
+=head1 OPTIONS
+
+Following command line options are allowed:
+
+=over 4
+
+=item -A F<string>
+
+Use F<string> content as custom Alphabet specification for
+sequence check.
+
+=item -a F<val>
+
+Use F<code> code as alphabet for sequence check. see
+faalphabetsort -c for the details of embeded alphabets.
+
+=item -c 
+
+Display bultins alphabets
+
+=item -h
+
+Usage display.
+
+=item -o F<file>
+
+Place the output into F<file>. Default stdout.
+
+=item -x
+
+Invert selection beahviour. If set, all entries matching the
+alphabet  criteria will be excluded (e.g. not extracted).
+
+=back
+
+=head1 FORMAT
+
+B<faalphabetsort> only handles fasta formatted files as input.
+
+
+=head1 DESCRIPTION
+
+B<fasizesort> is a program designed to extract entries names
+from FASTA formated files, based on composition criteria.
+Composition is compared to an alphabet.
+
+=head1 AUTHORS
+
+Eric Deveaud E<lt>edeveaud@pasteur.frE<gt>, Institut Pasteur
+
+=cut

@@ -1,0 +1,61 @@
+=pod
+
+=head1 NAME
+
+=over 4
+
+=item B<fastaextract> - extract entries by name from fasta formatted files.
+
+=back
+
+=head1 SYNOPSIS
+
+=over 4
+
+=item B<fastaextract> [options] E<lt>F<file>E<gt> ...
+
+=back
+
+=head1 OPTIONS
+
+Following command line options are allowed:
+
+=over 4
+
+=item -h
+
+Usage display.
+
+=item -l F<list>
+
+extract/exclude the entry names provided in file F<list>. Unless
+specified, all entries will be extracted/ignored.
+
+=item -o F<file>
+
+Place the output into F<file>. Default stdout.
+
+=item -x
+
+Invert selection beahviour. If set, all provided entries from
+list will be excluded (e.g. not extracted).
+
+=back
+
+=head1 FORMAT
+
+B<fastaextract> only handles fasta formatted files as input.
+
+file F<list> format is simple: one name per line, and and may
+contain comment lines.  Lines beginning with a '#' are comments
+
+=head1 DESCRIPTION
+
+B<fastaextract> is a program designed to extract entries, specified by
+names, from FASTA formatted sequence files.
+
+=head1 AUTHORS
+
+Eric Deveaud E<lt>edeveaud@pasteur.frE<gt>, Institut Pasteur
+
+=cut

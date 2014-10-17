@@ -1,0 +1,60 @@
+=pod
+
+=head1 NAME
+
+=over 4
+
+=item B<fasizesort> - extract entries names from fasta formatted
+files, based on size criteria
+
+=back
+
+=head1 SYNOPSIS
+
+=over 4
+
+=item B<tseqexclude> [options] E<lt>F<file>E<gt> ...
+
+=back
+
+=head1 OPTIONS
+
+Following command line options are allowed:
+
+=over 4
+
+=item -h
+
+Usage display.
+
+=item -l F<val>
+
+set the size criteria for name extraction, using F<val> as
+filter.  Unless specified, all entries will be extracted/ignored.
+
+=item -o F<file>
+
+Place the output into F<file>. Default stdout.
+
+=item -x
+
+Invert selection beahviour. If set, all entries matching the
+length criteria will be excluded (e.g. not extracted).
+
+=back
+
+=head1 FORMAT
+
+B<fasizesort> only handles fasta formatted files as input.
+
+
+=head1 DESCRIPTION
+
+B<fasizesort> is a program designed to extract entries names
+from FASTA formated files, based on lenght criteria.
+
+=head1 AUTHORS
+
+Eric Deveaud E<lt>edeveaud@pasteur.frE<gt>, Institut Pasteur
+
+=cut
