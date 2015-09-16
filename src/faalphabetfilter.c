@@ -78,7 +78,7 @@ static void usage(char *prog, int exval) {
   (void)fprintf(f, "usage: %s [options] file ...\n", prog);
   (void)fprintf(f, "  -A <string>  ... Use string as alphabet for sequence check.\n");
   (void)fprintf(f, "  -a <code>    ... Use code as alphabet for sequence check.\n");
-  (void)fprintf(f, "                   see \"faalphabetsort -c\" for the details of known alphabets.\n");
+  (void)fprintf(f, "                   see \"faalphabetfilter -c\" for the details of known alphabets.\n");
   (void)fprintf(f, "                   If no code is provided, no filtering is performed\n"); 
   (void)fprintf(f, "  -c           ... display bultins alphabets..\n");
   (void)fprintf(f, "  -h           ... Print this message and exit.\n");
@@ -124,7 +124,7 @@ int main(int argc, char **argv){
       }
 		else 
 		  errx(EXIT_FAILURE, 
-				 "unknown alphabet %d see \"faalphabetsort\" -c for code description",
+				 "unknown alphabet %d see \"faalphabetfilter\" -c for code description",
 				 code_num+1);
       break;
 	 case 'c':

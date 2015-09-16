@@ -4,7 +4,7 @@
 
 =over 4
 
-=item B<faalphabetsort> - extract entries names from fasta formatted
+=item B<faalphabetfilter> - extract entries names from fasta formatted
 files, based on alphabet criteria.
 
 =back
@@ -13,7 +13,7 @@ files, based on alphabet criteria.
 
 =over 4
 
-=item B<faalphabetsort> [options] E<lt>F<file>E<gt> ...
+=item B<faalphabetfilter> [options] E<lt>F<file>E<gt> ...
 
 =back
 
@@ -31,7 +31,7 @@ sequence check.
 =item -a F<val>
 
 Use F<code> code as alphabet for sequence check. see
-faalphabetsort -c for the details of embeded alphabets.
+faalphabetfilter -c for the details of embeded alphabets.
 
 =item -c 
 
@@ -54,12 +54,12 @@ alphabet  criteria will be excluded (e.g. not extracted).
 
 =head1 FORMAT
 
-B<faalphabetsort> only handles fasta formatted files as input.
+B<faalphabetfilter> only handles fasta formatted files as input.
 
 
 =head1 DESCRIPTION
 
-B<fasizesort> is a program designed to extract entries names
+B<faalphabetfilter> is a program designed to extract entries names
 from FASTA formated files, based on composition criteria.
 Composition is compared to an alphabet.
 
