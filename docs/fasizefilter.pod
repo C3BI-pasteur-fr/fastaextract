@@ -4,7 +4,7 @@
 
 =over 4
 
-=item B<fasizesort> - extract entries names from fasta formatted
+=item B<fasizefilter> - extract entries names from fasta formatted
 files, based on size criteria
 
 =back
@@ -45,12 +45,12 @@ length criteria will be excluded (e.g. not extracted).
 
 =head1 FORMAT
 
-B<fasizesort> only handles fasta formatted files as input.
+B<fasizefilter> only handles fasta formatted files as input.
 
 
 =head1 DESCRIPTION
 
-B<fasizesort> is a program designed to extract entries names
+B<fasizefilter> is a program designed to extract entries names
 from FASTA formated files, based on lenght criteria.
 
 =head1 AUTHORS
